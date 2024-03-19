@@ -14,5 +14,10 @@ try{
 catch(Throwable $th){
     echo"\n>>co loi sai:".$th->getMessage()."\n";
 }
+finally{
+    echo "=================\n";
+    echo "finish";
+    echo"see u soon";
+}
 echo "=================\n";
 echo "finish";
