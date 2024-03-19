@@ -19,6 +19,10 @@ class country{
         return"id=$this->id,ten=$this->name,dientich=$this->area km2";
 
     }
+    // ham huy: thi hanh khi doi tuong duoc gan null
+    public function __destruct(){
+        echo" \n >>endding live of country [$this->name]\n";
+    }
 }
 
 //test code
@@ -30,3 +34,5 @@ echo $q2->output();
 echo "\n";
 $q3=new country(code:"RF",name:"Lien Bang  Nga",dientich:17098246);
 echo $q3->output();
+echo "\n\n";
+$q3=null;
