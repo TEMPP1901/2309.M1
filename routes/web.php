@@ -1,7 +1,15 @@
 <?php
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Casiocontroller;
-Route::get('/casio', function () {
-    return view('casio/calc');
+use App\Http\Controllers\CourseController;
+
+//Route::get('/casio', function () {
+   // return view('casio/calc');
+//});
+//Route::get('/casio/cong',[CasioController::class,'add']);
+
+
+Route::get('/course',function(){
+    return view('index');
 });
-Route::get('/casio/cong',[CasioController::class,'add']);
+Route::get('/course',[CourseController::]);
