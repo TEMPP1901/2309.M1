@@ -56,7 +56,7 @@ class EmployDAO
     {
         $cn = fn_connect_oop();
         //1.them 1 khoa hoc moi vo bang
-        $sql = "UPDATE `employee` SET `Age` = '$new->Age', `EmployName`='$new->EmployName',`Pass`='$new->Pass WHERE `EmployId`='$new->EmployId'";
+        $sql = "UPDATE `employee` SET `Age` = '$new->Age', `EmployName`='$new->EmployName' WHERE `EmployId`='$new->EmployId'";
 
         // echo $sql;
 
