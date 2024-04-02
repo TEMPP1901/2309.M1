@@ -36,7 +36,7 @@ class EmployDAO
         //echo($sql);
 
         if ($result == false) {
-            //echo "khong the truy van du lieu trong bang tbcoiurse " . $cn->errno;
+            echo "khong the truy van du lieu trong bang tbcoiurse " . $cn->errno;
         } else {
             $ds = []; //tao mang chua cac dong ket qua tim dc
             //duyet tat ca cac dong du lieu tra ve va luu vo mang ds
@@ -62,7 +62,7 @@ class EmployDAO
 
         $result = $cn->query($sql);
         if ($result == false) {
-          //  echo "khong the truy van du lieu trong bang  " . $cn->errno;
+          echo "khong the truy van du lieu trong bang  " . $cn->errno;
         }
         $cn->close();
         return $result;

@@ -12,8 +12,7 @@ if (isset($_REQUEST["btSearch"])) {
 }
 
 if ($ds == null) {
-    exit;
-}
+    exit;}
 ?>
 
 <!DOCTYPE html>
